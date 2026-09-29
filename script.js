@@ -48,6 +48,7 @@
     if (i >= script.length) {
       promptLine();
       terminal.appendChild(cursor);
+      setTimeout(restart, 5000);
       return;
     }
     var step = script[i];
@@ -66,6 +67,22 @@
       }
     }, 70);
   }
+
+  // Keep the terminal at its full height while it is cleared and retyped,
+  // so the content below does not jump
+  function restart() {
+    terminal.style.minHeight = terminal.offsetHeight + 'px';
+    terminal.textContent = '';
+    typeStep(0);
+  }
+
+  // Mobile browsers fire resize on scroll (address bar), so only react to width changes
+  var lastWidth = window.innerWidth;
+  window.addEventListener('resize', function () {
+    if (window.innerWidth === lastWidth) return;
+    lastWidth = window.innerWidth;
+    terminal.style.minHeight = '';
+  });
 
   if (reducedMotion) {
     renderInstantly();
