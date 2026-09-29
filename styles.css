@@ -100,12 +100,19 @@ svg.fill { fill: currentColor; stroke: none; }
 .hero {
   display: grid;
   grid-template-columns: 1.25fr 1fr;
-  gap: 48px;
-  align-items: center;
+  grid-template-rows: auto auto;
+  column-gap: 48px;
+  row-gap: 24px;
+  align-content: center;
   min-height: min(calc(100vh - 60px), 820px);
   padding-top: 48px;
   padding-bottom: 48px;
 }
+.hero .avatar { grid-column: 1; grid-row: 1; }
+.hero-text { grid-column: 1; grid-row: 2; }
+/* Row height comes from the text block only; the terminal fills it */
+.hero .terminal { grid-column: 2; grid-row: 2; display: flex; flex-direction: column; height: 0; min-height: 100%; }
+.hero .terminal .terminal-body { flex: 1; min-height: 0; padding: 14px 22px; font-size: 14px; line-height: 1.65; overflow: hidden; }
 .avatar {
   width: 160px;
   height: 160px;
@@ -114,7 +121,6 @@ svg.fill { fill: currentColor; stroke: none; }
   border: 3px solid var(--accent);
   box-shadow: var(--shadow);
   display: block;
-  margin-bottom: 24px;
 }
 .hero h1 { font-size: clamp(34px, 5vw, 52px); line-height: 1.1; margin: 0 0 10px; letter-spacing: -0.02em; }
 .role { font-size: clamp(18px, 2.2vw, 22px); color: var(--accent); font-weight: 600; margin: 0 0 8px; }
@@ -144,7 +150,7 @@ svg.fill { fill: currentColor; stroke: none; }
   overflow: hidden;
   border: 1px solid #1f2a3d;
 }
-.terminal-bar { display: flex; align-items: center; gap: 8px; padding: 12px 16px; background: var(--terminal-bar); }
+.terminal-bar { display: flex; align-items: center; gap: 8px; padding: 11px 16px; background: var(--terminal-bar); }
 .dot { width: 12px; height: 12px; border-radius: 50%; }
 .dot-red { background: #ff5f57; }
 .dot-yellow { background: #febc2e; }
@@ -265,8 +271,13 @@ svg.fill { fill: currentColor; stroke: none; }
 }
 
 /* Responsive */
-@media (max-width: 860px) {
-  .hero { grid-template-columns: 1fr; min-height: 0; gap: 36px; padding-top: 36px; }
+@media (max-width: 960px) {
+  .hero { grid-template-columns: 1fr; min-height: 0; row-gap: 24px; padding-top: 36px; }
+  .hero .avatar,
+  .hero-text,
+  .hero .terminal { grid-column: 1; grid-row: auto; }
+  .hero .terminal { margin-top: 12px; height: auto; min-height: 0; }
+  .hero .terminal .terminal-body { min-height: 180px; }
   .about-grid,
   .skills-grid { grid-template-columns: 1fr; }
 }
