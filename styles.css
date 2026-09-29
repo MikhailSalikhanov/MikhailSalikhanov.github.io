@@ -187,9 +187,9 @@ svg.fill { fill: currentColor; stroke: none; }
 .card-title { margin: 0 0 16px; font-size: 18px; }
 
 /* About */
-.about-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 32px; align-items: start; }
-.summary { margin: 0; padding: 0; list-style: none; display: grid; gap: 14px; }
-.summary li { position: relative; padding-left: 28px; font-size: 18px; }
+.about-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 24px; align-items: stretch; }
+.summary { margin: 0; padding: 0; list-style: none; display: grid; gap: 12px; }
+.summary li { position: relative; padding-left: 26px; }
 .summary li::before { content: "▹"; position: absolute; left: 0; color: var(--accent); }
 .languages { margin: 0; display: grid; gap: 10px; }
 .languages div { display: flex; justify-content: space-between; border-bottom: 1px dashed var(--border); padding-bottom: 8px; }
