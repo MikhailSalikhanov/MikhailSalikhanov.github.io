@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Mykhailo Salikhanov — CV</title>
+  <style>
+    @page { size: A4; margin: 0; }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #1a1a1a;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    .page { display: flex; width: 210mm; height: 297mm; overflow: hidden; }
+
+    .sidebar {
+      width: 72mm;
+      background: #2c3e4c;
+      color: #ffffff;
+      padding: 18mm 7mm 12mm 9mm;
+    }
+    .sidebar h2 { font-size: 15pt; margin: 0 0 3mm; }
+    .sidebar ul { list-style: none; margin: 0 0 10mm; padding: 0; }
+    .sidebar li { font-size: 10.5pt; line-height: 1.35; margin-bottom: 0.9mm; padding-left: 5mm; position: relative; }
+    .sidebar li::before { content: "✓"; position: absolute; left: 0; }
+    .sidebar a { color: #ffffff; }
+
+    .main { flex: 1; padding: 14mm 12mm 12mm 11mm; }
+    h1 { font-size: 28pt; margin: 0; line-height: 1.1; }
+    .subtitle { font-size: 13pt; margin: 1mm 0 0; }
+    .main h2 { font-size: 24pt; margin: 9mm 0 3mm; line-height: 1.1; }
+    .summary { margin: 0; padding-left: 8mm; }
+    .summary li { font-size: 11pt; line-height: 1.4; }
+
+    .job { margin-bottom: 5mm; }
+    .job h3 { font-size: 15pt; margin: 0; }
+    .job .dates { font-size: 11pt; margin: 0.5mm 0 1.5mm; }
+    .job p { font-size: 11pt; margin: 0; line-height: 1.4; }
+
+    .edu { font-size: 11pt; margin: 0; }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <aside class="sidebar">
+      <h2>Contacts:</h2>
+      <ul>
+        <li><a href="mailto:mikhail.salikhanov@gmail.com">mikhail.salikhanov@gmail.com</a></li>
+        <li>+48537134217</li>
+        <li><a href="https://www.linkedin.com/in/mikhail-salikhanov/">LinkedIn</a></li>
+        <li><a href="https://mikhailsalikhanov.github.io/">mikhailsalikhanov.github.io</a></li>
+      </ul>
+
+      <h2>Languages:</h2>
+      <ul>
+        <li>English (B2+)</li>
+        <li>Polish (B2)</li>
+        <li>Ukrainian (native)</li>
+        <li>Russian (native)</li>
+      </ul>
+
+      <h2>Main skills:</h2>
+      <ul>
+        <li>JavaScript, TypeScript</li>
+        <li>HTML, CSS, LESS and SASS (SCSS)</li>
+        <li>React, Redux (incl. Toolkit)</li>
+        <li>TailwindCSS</li>
+        <li>REST, GraphQL (Apollo Client)</li>
+        <li>Git (GitHub, GitLab, Bitbucket)</li>
+        <li>Figma</li>
+        <li>AI tools (Claude Code, Codex, Cursor)</li>
+        <li>Scrum</li>
+      </ul>
+
+      <h2>Additional skills:</h2>
+      <ul>
+        <li>Python Django (backend)</li>
+        <li>Node.js (backend)</li>
+        <li>WebSockets</li>
+        <li>Redis &amp; Background Jobs</li>
+        <li>Playwright</li>
+        <li>React Hook Form</li>
+        <li>Material UI</li>
+        <li>Yarn, npm, Webpack, Vite</li>
+      </ul>
+    </aside>
+
+    <main class="main">
+      <h1>Mykhailo Salikhanov</h1>
+      <p class="subtitle">Middle/Senior Front-End Developer (Krakow, Poland)</p>
+
+      <h2>Summary</h2>
+      <ul class="summary">
+        <li>Middle/Senior Front-End / Full Stack Developer</li>
+        <li>5+ years of experience as a Front-End Developer</li>
+        <li>Skilled in JavaScript/TypeScript, React, AI tools (Claude Code, Codex, Cursor)</li>
+      </ul>
+
+      <h2>Experience</h2>
+      <div class="job">
+        <h3>Middle/Senior Front-End Developer</h3>
+        <p class="dates">October 2023 – present</p>
+        <p><strong>Stack:</strong> TypeScript, React, Redux, SCSS, TailwindCSS, REST API, GraphQL, Django, Figma, Git</p>
+      </div>
+      <div class="job">
+        <h3>Junior/Middle Front-End Developer</h3>
+        <p class="dates">August 2022 – October 2023</p>
+        <p><strong>Stack:</strong> HTML, CSS, JavaScript, TailwindCSS, AlpineJS, React, Redux, Figma, MODX CMS, Git</p>
+      </div>
+      <div class="job">
+        <h3>Front-End Developer</h3>
+        <p class="dates">May 2021 – August 2022</p>
+        <p><strong>Stack:</strong> HTML, CSS, JavaScript, React, SQL, WordPress</p>
+      </div>
+      <div class="job">
+        <h3>Trainee Front-End Developer</h3>
+        <p class="dates">0.5 year</p>
+      </div>
+
+      <h2>Education</h2>
+      <p class="edu">The National Metallurgical Academy of Ukraine</p>
+    </main>
+  </div>
+</body>
+</html>
