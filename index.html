@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mykhailo Salikhanov</title>
+  <meta name="description" content="Mykhailo Salikhanov — Middle/Senior Front-End Developer in Krakow, Poland. TypeScript, React, Redux, AI tools.">
+  <meta property="og:title" content="Mykhailo Salikhanov — Front-End Developer">
+  <meta property="og:description" content="Middle/Senior Front-End Developer in Krakow, Poland. TypeScript, React, Redux, AI tools.">
+  <meta property="og:url" content="https://mikhailsalikhanov.github.io/">
+  <meta property="og:image" content="https://mikhailsalikhanov.github.io/assets/photo.jpg">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2314b8a6'/%3E%3Ctext x='32' y='42' font-family='monospace' font-size='28' font-weight='700' text-anchor='middle' fill='%230b1120'%3EMS%3C/text%3E%3C/svg%3E">
+  <script>
+    (function () {
+      var theme;
+      try { theme = localStorage.getItem('theme'); } catch (e) {}
+      if (theme !== 'light' && theme !== 'dark') {
+        theme = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+      document.documentElement.classList.add('js');
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="#top" class="logo" aria-label="Back to top">&lt;MS /&gt;</a>
+      <nav class="nav" aria-label="Main">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle dark / light theme">
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11z"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero container">
+      <div class="hero-text">
+        <img class="avatar" src="assets/avatar.jpg" alt="Mykhailo Salikhanov" width="160" height="160">
+        <h1>Mykhailo Salikhanov</h1>
+        <p class="role">Middle/Senior Front-End Developer</p>
+        <p class="location">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+          Krakow, Poland
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="assets/Mykhailo-Salikhanov-CV.pdf" download>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M4 20h16"/></svg>
+            Download CV
+          </a>
+          <a class="btn btn-ghost" href="mailto:mikhail.salikhanov@gmail.com">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+            Email me
+          </a>
+        </div>
+      </div>
+
+      <div class="terminal" aria-label="Terminal introduction">
+        <div class="terminal-bar">
+          <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+          <span class="terminal-title">mykhailo@krakow: ~</span>
+        </div>
+        <pre class="terminal-body" id="terminal" aria-live="off"></pre>
+        <noscript>
+          <pre class="terminal-body">$ whoami
+Mykhailo Salikhanov — Front-End / Full Stack Developer
+$ cat skills.txt
+TypeScript · React · Redux · AI tools</pre>
+        </noscript>
+      </div>
+    </section>
+
+    <section id="about" class="section container reveal">
+      <h2 class="section-title"><span>01.</span> About</h2>
+      <div class="about-grid">
+        <ul class="summary">
+          <li>Middle/Senior Front-End / Full Stack Developer</li>
+          <li>5+ years of experience as a Front-End Developer</li>
+          <li>Skilled in JavaScript/TypeScript, React, AI tools (Claude Code, Codex, Cursor)</li>
+          <li>English (B2+), Polish (B2), Russian and Ukrainian (native)</li>
+        </ul>
+        <div class="card">
+          <h3 class="card-title">Languages</h3>
+          <dl class="languages">
+            <div><dt>English</dt><dd>B2+</dd></div>
+            <div><dt>Polish</dt><dd>B2</dd></div>
+            <div><dt>Ukrainian</dt><dd>native</dd></div>
+            <div><dt>Russian</dt><dd>native</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section container reveal">
+      <h2 class="section-title"><span>02.</span> Experience</h2>
+      <ol class="timeline">
+        <li class="job">
+          <div class="job-head">
+            <h3>Middle/Senior Front-End Developer</h3>
+            <p class="job-meta">October 2023 – present</p>
+          </div>
+          <ul class="chips">
+            <li>TypeScript</li><li>React</li><li>Redux</li><li>SCSS</li><li>TailwindCSS</li><li>REST API</li><li>GraphQL</li><li>Django</li><li>Figma</li><li>Git</li>
+          </ul>
+        </li>
+
+        <li class="job">
+          <div class="job-head">
+            <h3>Junior/Middle Front-End Developer</h3>
+            <p class="job-meta">August 2022 – October 2023</p>
+          </div>
+          <ul class="chips">
+            <li>HTML</li><li>CSS</li><li>JavaScript</li><li>TailwindCSS</li><li>AlpineJS</li><li>React</li><li>Redux</li><li>Figma</li><li>MODX CMS</li><li>Git</li>
+          </ul>
+        </li>
+
+        <li class="job">
+          <div class="job-head">
+            <h3>Front-End Developer</h3>
+            <p class="job-meta">May 2021 – August 2022</p>
+          </div>
+          <ul class="chips">
+            <li>HTML</li><li>CSS</li><li>JavaScript</li><li>React</li><li>SQL</li><li>WordPress</li>
+          </ul>
+        </li>
+
+        <li class="job">
+          <div class="job-head">
+            <h3>Trainee Front-End Developer</h3>
+            <p class="job-meta">0.5 year</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section id="skills" class="section container reveal">
+      <h2 class="section-title"><span>03.</span> Skills</h2>
+      <div class="skills-grid">
+        <div class="card">
+          <h3 class="card-title">Main skills</h3>
+          <ul class="chips chips-lg">
+            <li>JavaScript</li><li>TypeScript</li><li>HTML</li><li>CSS</li><li>LESS</li><li>SASS (SCSS)</li>
+            <li>React</li><li>Redux (incl. Toolkit)</li><li>TailwindCSS</li><li>REST</li><li>GraphQL (Apollo Client)</li>
+            <li>Git (GitHub, GitLab, Bitbucket)</li><li>AI tools (Claude Code, Codex, Cursor)</li><li>Scrum</li><li>Figma</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3 class="card-title">Additional skills</h3>
+          <ul class="chips chips-lg chips-muted">
+            <li>Python Django (backend)</li><li>Node.js (backend)</li><li>WebSockets</li>
+            <li>Redis &amp; Background Jobs</li><li>Playwright</li><li>React Hook Form</li><li>Material UI</li>
+            <li>Yarn</li><li>npm</li><li>Webpack</li><li>Vite</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="section container reveal">
+      <h2 class="section-title"><span>04.</span> Education</h2>
+      <div class="card">
+        <p class="edu">The National Metallurgical Academy of Ukraine</p>
+      </div>
+    </section>
+
+    <section id="contact" class="section container reveal contact">
+      <h2 class="section-title"><span>05.</span> Contact</h2>
+      <p class="contact-lead">The best way to reach me is email.</p>
+      <a class="contact-email" href="mailto:mikhail.salikhanov@gmail.com">mikhail.salikhanov@gmail.com</a>
+      <div class="socials">
+        <a href="https://github.com/MikhailSalikhanov" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" aria-hidden="true" class="fill"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.34-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.69 5.39-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg>
+          GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/mikhail-salikhanov/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" aria-hidden="true" class="fill"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+          LinkedIn
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">© 2026 Mykhailo Salikhanov</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
