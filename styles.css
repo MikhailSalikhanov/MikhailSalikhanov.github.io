@@ -103,10 +103,8 @@ svg.fill { fill: currentColor; stroke: none; }
   grid-template-rows: auto auto;
   column-gap: 48px;
   row-gap: 24px;
-  align-content: center;
-  min-height: min(calc(100vh - 60px), 820px);
-  padding-top: 48px;
-  padding-bottom: 48px;
+  padding-top: 56px;
+  padding-bottom: 32px;
 }
 .hero .avatar { grid-column: 1; grid-row: 1; }
 .hero-text { grid-column: 1; grid-row: 2; }
