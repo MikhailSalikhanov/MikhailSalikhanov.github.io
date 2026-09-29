@@ -99,7 +99,7 @@ svg.fill { fill: currentColor; stroke: none; }
 /* Hero */
 .hero {
   display: grid;
-  grid-template-columns: 1fr 1.1fr;
+  grid-template-columns: 1.25fr 1fr;
   gap: 48px;
   align-items: center;
   min-height: min(calc(100vh - 60px), 820px);
